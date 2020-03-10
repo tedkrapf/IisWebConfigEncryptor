@@ -17,3 +17,5 @@ a.) run the clickonce app per usual
 b.) find it in task manager -> details, right click -> open location
 c.) locate the (underlying) .exe in the location window, right click -> run as admin
 d.) create a shortcut if it makes you feel better ;)
+
+<img src="http://apps.tedkrapf.com/WebConfigEncryptor/sample.jpg" style="width:100%" />
