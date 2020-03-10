@@ -11,4 +11,9 @@ This is a basic, C# WinForms app that retrieves the local IIS sites, and gives y
 4.) click the site row's "encrypt me" or "decrypt me" button to take that action and view the updated status
 
 
-Note, the encryption uses the Microsoft RSA encryption provider.
+Note 1: The encryption uses the Microsoft RSA encryption provider.
+Note 2: The app requires Admin UAC elevation.  ClickOnce apps don't natively allow UAC elevation.  You either need to hack a solution into the app (https://stackoverflow.com/questions/5713825/run-as-administrator-requireadministrator-clickonce-emulating-system-time -- I'll try this when I have more time), or do the following:
+a.) run the clickonce app per usual
+b.) find it in task manager -> details, right click -> open location
+c.) locate the (underlying) .exe in the location window, right click -> run as admin
+d.) create a shortcut if it makes you feel better ;)
